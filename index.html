@@ -36,6 +36,16 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="./flutter.js" defer=""></script>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function(OneSignal) {
+      OneSignal.init({
+        appId: "19ec195f-f00c-48ff-864a-b1a268022b00",
+      });
+    });
+  </script>
+
   <style id="splash-screen-style">
     html {
       height: 100%
